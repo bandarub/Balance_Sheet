@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.form{
+  display:grid;
+  grid-template-columns: 30% 30% 25% 15%;
+  width:80vw;
+  margin:0 auto;
+  column-gap: 1vw;
+}
+.form input,.select-option {
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  
+  border-radius:2vw;
+}
+input[type=text]:focus, .select-option :focus{
+  background-color: rgb(124, 216, 63);
+  transition-duration: 0.4s;
+}
+.submit_button{
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border:none;
+    transition-duration: 0.4s;
+    background-color:  rgb(124, 216, 63);
+}
+.submit_button:hover{
+  background-color: orange;
+  color:white;
+}
+.transactions{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  width:80vw;
+  margin:0 auto;
+
+}
+.transactions{
+  border:1px solid #ddd;
+  margin-top:3vw;
+  font-size:1.5vw;
+}
+.tableDisplay {
+  border: 1px solid #ddd;
+  text-align: center;
+  border-collapse: collapse;
+  width:100%;
+}
+.table-header th{
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tableDisplay tr:nth-child(even){background-color: #ddd}
+.tableDisplay tr:hover {background-color: orange;}
+
+.income-container{
+border-right-style: dotted
+}
