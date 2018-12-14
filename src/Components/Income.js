@@ -3,7 +3,7 @@ import React from 'react';
 let sumIncome = 0;
 
 const Income = (props) => {
-    sumIncome=props.income.reduce(function (accumulator, myObj) {
+    sumIncome=props.income.reduce((accumulator, myObj)=> {
         return accumulator + Number(myObj.amount);
       }, 0);
     return (<div className="income-container">        
